@@ -1,11 +1,92 @@
-.section {
-  padding: 0 180px;
+.faqContainer {
+  padding: 78px 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.titleSection {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mainTitle {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 122%;
+  text-transform: uppercase;
+  color: #0e1927;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-left: -180px;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.titleWordLeft {
+  padding-top: 0;
+}
+
+.titleWordRight {
+  position: absolute;
+  top: 55px;
+  left: 200px;
+  white-space: nowrap;
+}
+
+.horizontalLine {
+  display: block;
+  height: 1px;
+  background-color: #a0a0a0;
+  position: absolute;
+  top: 15px;
+  left: 210px;
+  right: 0;
+}
+
+.titleSection::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: #a0a0a0;
+}
+
+.mainContent {
+  display: flex;
+  gap: 40px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.imageBlock {
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 245px;
+}
+
+.verticalLine {
+  height: 500px;
+  width: 1px;
+  background-color: #a0a0a0;
+  margin-right: 20px;
+  position: relative;
 }
 
 .imageWrapper {
   position: relative;
-  width: 275px;
-  height: 293px;
+  width: 244px;
+  height: 310px;
   flex-shrink: 0;
 }
 
@@ -38,4 +119,66 @@
   height: 100%;
   background: rgba(30, 44, 58, 0.64);
   z-index: 3;
+}
+
+.faqBlock {
+  flex-grow: 1;
+  padding-top: 15px;
+}
+
+.faqItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #d3d3d3;
+  cursor: pointer;
+}
+
+.faqQuestion {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.arrowIcon {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.faqBlock .faqItem:last-of-type {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.moreButton {
+  background: none;
+  border: none;
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.arrowDown {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: bold;
+  transform: rotate(180deg);
+}
+
+.bottomBar {
+  width: 100%;
+  height: 100px;
+  background-color: #2c3e50;
+  margin-top: 80px;
+  position: absolute;
+  bottom: 0;
 }
