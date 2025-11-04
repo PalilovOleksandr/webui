@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Instrument_Sans, Tinos } from 'next/font/google';
+import 'modern-normalize';
 import './globals.css';
 import Header from '@/components/Header/Header';
 
