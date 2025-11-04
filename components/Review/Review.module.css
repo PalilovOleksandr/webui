@@ -1,0 +1,91 @@
+.section {
+  display: flex;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.quoteSection {
+  flex: 1;
+  background-color: #273347;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.quoteIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 49px;
+  height: 49px;
+  border-radius: 100%;
+  margin-bottom: 24px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: #293241;
+}
+
+.quoteText {
+  max-width: 511px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.clientInfo {
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 31px;
+  border-bottom: 1px solid white;
+  width: 150px;
+}
+
+.imageSection {
+  flex: 1;
+  background-image: url('/images/Review.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  min-height: 500px;
+}
+
+.imageSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(30, 44, 58, 0.64);
+  z-index: 1;
+}
+
+.contactButton {
+  z-index: 2;
+  padding: 6px 40px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 197%;
+  text-transform: uppercase;
+  color: #293241;
+  border: none;
+  border-radius: 3px;
+  width: 264px;
+  height: 70px;
+  margin-bottom: 95px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.contactButton:hover {
+  background-color: #f0f0f0;
+}

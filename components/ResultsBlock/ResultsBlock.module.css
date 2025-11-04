@@ -1,0 +1,78 @@
+.section {
+  position: relative;
+  background-image: url('/images/ResultsBlock.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  color: #fff;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+}
+
+.section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    269deg,
+    rgba(41, 50, 65, 0.76) 0%,
+    rgba(84, 101, 132, 0.76) 86.88%
+  );
+}
+
+.container {
+  position: relative;
+  margin-left: 75px;
+  width: 100%;
+  background-color: #293241;
+  padding: 48px 80px;
+  z-index: 1;
+}
+
+.title {
+  font-family: var(--font-tinos-sans);
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 70%;
+  margin-bottom: 71px;
+}
+
+.columnsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  font-family: var(--font-inter-sans);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 175%;
+  padding: 0;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 43px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.iconWrapper svg {
+  font-size: 1.5em;
+}

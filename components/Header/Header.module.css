@@ -1,0 +1,60 @@
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 16px 105px 16px 105px;
+  gap: 33px;
+  color: var(--color-primary);
+  background: linear-gradient(175deg, #0e1927 11.54%, #5a707f 100%);
+}
+
+.address {
+  display: flex;
+  font-style: normal;
+  gap: 18px;
+  margin-right: 105px;
+}
+
+.phone {
+  width: 20px;
+  height: 20px;
+}
+
+.number {
+  font-family: var(--font-inter-sans);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.svg {
+  width: 215px;
+  height: 84px;
+}
+
+.navigation {
+  display: block;
+  flex: 1;
+  margin-right: 45px;
+}
+
+.navigationList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigationList li {
+  display: flex;
+}
+
+.navigationList li a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lang {
+  font-weight: 700;
+  font-size: 33px;
+}

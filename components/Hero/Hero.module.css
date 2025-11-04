@@ -1,0 +1,124 @@
+.hero {
+  position: relative;
+  background: url('/images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 306px 200px 0 200px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 44, 58, 0.64);
+  z-index: 1;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 275px 0 0 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.86) 0%,
+    rgba(255, 255, 255, 0.93) 23.56%,
+    #fff 100%
+  );
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-tinos-sans), sans-serif;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 115%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #0e1927;
+}
+
+.span {
+  position: relative;
+  font-family: var(--font-tinos-sans), sans-serif;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #0e1927;
+}
+
+.span::after {
+  content: '';
+  position: absolute;
+  top: 41px;
+  transform: translateX(20%);
+  border: 1px solid #293241;
+  width: 318px;
+  height: 1px;
+  background: #0e1927;
+}
+
+.subtitle {
+  position: relative;
+  font-weight: 300;
+  font-size: 40px;
+  color: #0e1927;
+  margin-bottom: 92px;
+}
+
+.subtitle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  border: 1px solid #293241;
+  width: 347px;
+  height: 0px;
+  background: #0e1927;
+  transform: rotate(90deg) translateY(64px);
+}
+
+.button {
+  position: relative;
+  align-self: flex-start;
+  background: #293241;
+  color: #fff;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 204%;
+  text-transform: uppercase;
+  padding: 6px 43px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 59px;
+  transition: background 0.3s;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 34px;
+  transform: translateX(41%);
+  border: 1px solid #293241;
+  width: 701px;
+  height: 0px;
+  background: #0e1927;
+}
+
+.button:hover {
+  background: #1e2c3a;
+}

@@ -1,0 +1,82 @@
+/* === CSS Reset === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* === Базові стилі === */
+html,
+body {
+  height: 100%;
+  font-family: var(--font-inter-sans), sans-serif;
+  background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+/* Центрований контейнер */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+/* Текстові елементи */
+p {
+  font-family: var(--font-inter-sans);
+}
+
+/* Кнопки */
+button {
+  cursor: pointer;
+}
+
+/* Зображення */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === CSS Variables === */
+:root {
+  --color-primary: #ffffff;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #293241;
+}
