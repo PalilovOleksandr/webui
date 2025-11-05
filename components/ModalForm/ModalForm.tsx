@@ -13,7 +13,7 @@ interface FormValues {
 }
 
 const myKey = {
-  publicKey: process.env.NEXT_PUBLIC_PUBLICK_KEY,
+  publicKey: process.env.NEXT_PUBLICK_KEY,
   templateId: process.env.NEXT_PUBLIC_TEMPLATE_ID,
   serviceID: process.env.NEXT_PUBLIC_SERVICE_ID,
 };
