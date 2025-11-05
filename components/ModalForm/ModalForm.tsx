@@ -13,7 +13,6 @@ interface FormValues {
 }
 
 const myKey = {
-  publicKey: process.env.NEXT_PUBLICK_KEY,
   templateId: process.env.NEXT_PUBLIC_TEMPLATE_ID,
   serviceID: process.env.NEXT_PUBLIC_SERVICE_ID,
 };
@@ -55,7 +54,7 @@ const ModalForm = ({ onClose }: ModalFormProps) => {
           user_email: values.email,
           message: values.message,
         },
-        `${myKey.publicKey}`
+        'To8pW1ZPlb5TJqseo'
       );
       alert('✅ Повідомлення успішно відправлено!');
       resetForm();
