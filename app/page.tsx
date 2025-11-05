@@ -7,7 +7,7 @@ import AlimonyService from '@/components/AlimonyService/AlimonyService';
 import ResultsBlock from '@/components/ResultsBlock/ResultsBlock';
 import PriceDetails from '@/components/PriceDetails/PriceDetails';
 import Review from '@/components/Review/Review';
-import FAQ from '@/components/FAQ/FAQ';
+// import FAQ from '@/components/FAQ/FAQ';
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <ResultsBlock />
       <PriceDetails />
       <Review />
-      <FAQ />
+      {/* <FAQ /> */}
     </>
   );
 }

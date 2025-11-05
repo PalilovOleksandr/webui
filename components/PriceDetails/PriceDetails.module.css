@@ -4,17 +4,10 @@
   color: #011e3b;
 }
 
-.container {
-  position: relative;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.container::before {
+.section::before {
   content: '';
   position: absolute;
-  top: 15px;
-  bottom: 0;
+  bottom: 30%;
   left: 134px;
   width: 1px;
   height: 340px;
@@ -22,15 +15,40 @@
   z-index: -1;
 }
 
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
 .container::after {
   content: '';
   position: absolute;
+  bottom: 89px;
+  right: 40px;
+  border: 1px solid #0e1927;
+  width: 181px;
+  height: 0px;
+  transform: rotate(-90deg);
+}
+
+.container::before {
+  content: '';
+  position: absolute;
   bottom: 0;
-  right: 161px;
+  right: 9%;
   border: 1px solid #0e1927;
   width: 439px;
   height: 0px;
-  z-index: -1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 55px;
 }
 
 .title {
@@ -38,20 +56,14 @@
   font-size: 36px;
   line-height: 139%;
   color: #011e3b;
-  margin-left: 207px;
-  margin-bottom: 50px;
-  position: relative;
+  margin-right: 21px;
   z-index: 1;
 }
 
-.title::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 130px;
-  width: 340px;
+.line {
+  width: 360px;
   height: 1px;
-  border-top: 1px solid #0e1927;
+  background-color: #0e1927;
 }
 
 .mainContent {
@@ -66,17 +78,6 @@
 .textBlock {
   flex-grow: 1;
   position: relative;
-}
-
-.textBlock::after {
-  content: '';
-  position: absolute;
-  bottom: 72px;
-  right: -150px;
-  border: 1px solid #0e1927;
-  width: 181px;
-  height: 0px;
-  transform: rotate(-90deg);
 }
 
 .imageWrapper {
@@ -135,4 +136,129 @@
   line-height: 157%;
   text-transform: uppercase;
   color: #011e3b;
+}
+
+/* ===================================================== */
+/* 📲 TABLET — 1023px і менше */
+/* ===================================================== */
+@media (max-width: 1023px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .section::before,
+  .line,
+  .container::after,
+  .container::before {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .line {
+    width: 180px;
+  }
+
+  .mainContent {
+    align-items: center;
+    padding: 0;
+    gap: 40px;
+  }
+
+  .imageWrapper {
+    width: 240px;
+    height: 360px;
+  }
+
+  .textBlock::after {
+    right: -5%;
+    bottom: 0;
+    width: 100px;
+    opacity: 0.3;
+    transform: rotate(-90deg);
+  }
+
+  .textBlock::before {
+    right: -2%;
+    bottom: -6%;
+    width: 240px;
+    opacity: 0.3;
+  }
+
+  .list {
+    font-size: 18px;
+    line-height: 170%;
+    margin-left: 0;
+  }
+
+  .comment {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* ===================================================== */
+/* 📱 MOBILE — 480px і менше */
+/* ===================================================== */
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .container::before {
+    display: none;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .line {
+    width: 120px;
+  }
+
+  .mainContent {
+    gap: 28px;
+  }
+
+  .imageWrapper {
+    width: 200px;
+    height: 300px;
+  }
+
+  .textBlock::before,
+  .textBlock::after {
+    display: none;
+  }
+
+  .list {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .comment {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }

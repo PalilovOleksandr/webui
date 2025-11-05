@@ -5,12 +5,14 @@ import css from './ServiceCard.module.css';
 const ServiceCard = () => {
   return (
     <section className={css.section}>
-      <Image
-        src={serviceCardImg}
-        alt="Photo service card"
-        width={390}
-        height={501}
-      />
+      <div className={css.imageWrapper}>
+        <Image
+          src={serviceCardImg}
+          alt="Photo service card"
+          width={390}
+          height={501}
+        />
+      </div>
       <div className={css.content}>
         <h2 className={css.title}>
           Розірвання <br /> шлюбу під ключ

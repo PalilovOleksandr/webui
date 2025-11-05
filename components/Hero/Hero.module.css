@@ -1,13 +1,10 @@
 .hero {
   position: relative;
-  background: url('/images/hero.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url('/images/hero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 306px 200px 0 200px;
+  padding: 300px 200px 0;
   overflow: hidden;
 }
 
@@ -80,17 +77,6 @@
   margin-bottom: 92px;
 }
 
-.subtitle::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  border: 1px solid #293241;
-  width: 347px;
-  height: 0px;
-  background: #0e1927;
-  transform: rotate(90deg) translateY(64px);
-}
-
 .button {
   position: relative;
   align-self: flex-start;
@@ -108,7 +94,7 @@
   transition: background 0.3s;
 }
 
-button::before {
+.button::before {
   content: '';
   position: absolute;
   top: 34px;
@@ -119,6 +105,108 @@ button::before {
   background: #0e1927;
 }
 
+.button::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #293241;
+  top: -200%;
+  right: -265%;
+  width: 347px;
+  height: 0px;
+  background: #0e1927;
+  transform: rotate(90deg);
+}
+
 .button:hover {
   background: #1e2c3a;
+}
+
+/* ===== 🖥️ 1024px і менше (tablet) ===== */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 200px 100px 0;
+  }
+
+  .hero::after {
+    inset: 175px 0 0 0;
+  }
+
+  .title,
+  .span {
+    font-size: 54px;
+  }
+
+  .span::after {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+  .button {
+    font-size: 22px;
+    padding: 6px 32px;
+  }
+
+  .button::before {
+    width: 400px;
+  }
+
+  .button::before,
+  .button::after {
+    display: none;
+  }
+}
+
+/* ===== 📱 768px і менше (mobile landscape) ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 160px 60px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .title,
+  .span {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  .button {
+    font-size: 20px;
+    padding: 8px 28px;
+    align-self: center;
+  }
+}
+
+/* ===== 📞 480px і менше (mobile portrait) ===== */
+@media (max-width: 480px) {
+  .hero {
+    padding: 120px 30px 0;
+  }
+
+  .title,
+  .span {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 8px 24px;
+  }
 }

@@ -2,24 +2,17 @@
   background-color: #293241;
   display: flex;
   flex-direction: column;
-  padding: 29px 168px 29px 232px;
-  height: 571px;
+  padding: 29px 150px;
+  padding-bottom: 166px;
   color: #fff;
 }
 
 .header {
-  position: relative;
-  padding-bottom: 49px;
-}
-
-.header::after {
-  content: '';
-  position: absolute;
-  right: 140px;
-  top: 45px;
-  border: 2px solid #fff;
-  width: 307px;
-  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 49px;
 }
 
 .title {
@@ -30,21 +23,116 @@
   text-transform: uppercase;
 }
 
+.line {
+  background-color: #ffffff;
+  width: 307px;
+  height: 2px;
+}
+
 .content {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 44px;
 }
 
 .list {
-  list-style-type: block;
+  font-family: var(--font-inter-sans);
+  list-style-type: inside;
   font-weight: 300;
   font-size: 26px;
   line-height: 192%;
   color: #fff;
+  max-width: 507px;
+  padding-left: 20px;
 }
 
-.image {
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 16px;
+  max-width: 500px;
+}
+
+.imageWrapper img {
   width: 100%;
-  max-width: 489px;
   height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ===================================================== */
+/* 📲 TABLET — 1023px і менше */
+/* ===================================================== */
+@media (max-width: 1023px) {
+  .section {
+    padding: 40px 80px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 32px;
+  }
+
+  .header::after {
+    display: none;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 160%;
+  }
+
+  .list {
+    font-size: 22px;
+    line-height: 180%;
+  }
+
+  .imageWrapper {
+    justify-content: center;
+    max-width: 80%;
+    padding-top: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 100%;
+  }
+}
+
+/* ===================================================== */
+/* 📱 MOBILE — 480px і менше */
+/* ===================================================== */
+@media (max-width: 480px) {
+  .section {
+    padding: 32px 20px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  .list {
+    font-size: 18px;
+    line-height: 160%;
+    padding-left: 16px;
+  }
+
+  .imageWrapper {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .imageWrapper img {
+    width: 100%;
+    height: auto;
+  }
 }

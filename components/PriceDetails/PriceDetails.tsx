@@ -6,7 +6,10 @@ const PriceDetails = () => {
   return (
     <section className={css.section}>
       <div className={css.container}>
-        <h3 className={css.title}>ЩО ВКЛЮЧЕНО У ВАРТІСТЬ 9000 ГРН?</h3>
+        <div className={css.header}>
+          <h3 className={css.title}>ЩО ВКЛЮЧЕНО У ВАРТІСТЬ 9000 ГРН?</h3>
+          <div className={css.line}></div>
+        </div>
         <div className={css.mainContent}>
           <div className={css.imageWrapper}>
             <Image

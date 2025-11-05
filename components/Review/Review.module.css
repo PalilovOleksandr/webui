@@ -4,6 +4,7 @@
   color: #ffffff;
 }
 
+/* ===== LEFT BLOCK ===== */
 .quoteSection {
   flex: 1;
   background-color: #273347;
@@ -13,6 +14,8 @@
   align-items: center;
   justify-content: center;
   min-height: 500px;
+  position: relative;
+  z-index: 2;
 }
 
 .quoteIcon {
@@ -46,8 +49,32 @@
   padding-bottom: 31px;
   border-bottom: 1px solid white;
   width: 150px;
+  margin-bottom: 40px;
 }
 
+.contactButton {
+  display: block;
+  margin-bottom: 95px;
+  padding: 6px 40px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 26px;
+  z-index: 3;
+  line-height: 197%;
+  text-transform: uppercase;
+  color: #293241;
+  border: none;
+  border-radius: 3px;
+  width: 240px;
+  height: 60px;
+  transition: background-color 0.3s;
+}
+
+.contactButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* ===== RIGHT BLOCK ===== */
 .imageSection {
   flex: 1;
   background-image: url('/images/Review.jpg');
@@ -65,27 +92,72 @@
   position: absolute;
   inset: 0;
   background-color: rgba(30, 44, 58, 0.64);
-  z-index: 1;
-}
-
-.contactButton {
   z-index: 2;
-  padding: 6px 40px;
-  background-color: white;
-  font-weight: 400;
-  font-size: 29px;
-  line-height: 197%;
-  text-transform: uppercase;
-  color: #293241;
-  border: none;
-  border-radius: 3px;
-  width: 264px;
-  height: 70px;
-  margin-bottom: 95px;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
 }
 
-.contactButton:hover {
-  background-color: #f0f0f0;
+/* ===================================================== */
+/* 📲 TABLET — 1023px і менше */
+/* ===================================================== */
+@media (max-width: 1023px) {
+  .section {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .imageSection {
+    position: absolute;
+    inset: 0;
+    background-image: none;
+    z-index: 2;
+  }
+
+  .imageSection::before {
+    display: none;
+  }
+  .contactButton {
+    margin-bottom: 60px;
+  }
+
+  .quoteSection {
+    position: relative;
+    z-index: 1;
+    padding: 60px 80px;
+  }
+}
+
+/* ===================================================== */
+/* 📱 MOBILE — 480px і менше */
+/* ===================================================== */
+@media (max-width: 480px) {
+  .quoteSection {
+    padding: 40px 24px;
+  }
+
+  .quoteIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .quoteText {
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 28px;
+  }
+
+  .clientInfo {
+    font-size: 14px;
+    width: 120px;
+    margin-bottom: 30px;
+  }
+
+  .contactButton {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+  }
 }

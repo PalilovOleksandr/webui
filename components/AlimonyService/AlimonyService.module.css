@@ -1,8 +1,8 @@
 .section {
   display: flex;
   flex-direction: column;
-  height: 564px;
   padding: 54px 232px;
+  color: #293241;
 }
 
 .title {
@@ -11,15 +11,24 @@
   font-size: 26px;
   line-height: 150%;
   text-transform: uppercase;
-  color: #293241;
   margin-bottom: 17px;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 75px;
+}
+
+/* 🖼️ IMAGE WRAPPER BASE */
 .imageWrapper {
   position: relative;
   width: 275px;
-  height: 293px;
+  height: auto;
+  aspect-ratio: 275 / 293;
   flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
 .imageWrapper::after {
@@ -31,22 +40,7 @@
   height: 100%;
   background: #d9d9d9;
   z-index: 1;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 75px;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  position: relative;
-  z-index: 2;
+  transition: all 0.3s ease;
 }
 
 .imageWrapper::before {
@@ -58,14 +52,94 @@
   height: 100%;
   background: rgba(30, 44, 58, 0.64);
   z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
 }
 
 .list {
   flex-grow: 1;
   list-style-type: disc;
-  font-family: var(--font-family);
+  font-family: var(--font-inter-sans);
   font-weight: 400;
   font-size: 20px;
   line-height: 180%;
   color: #111516;
+}
+
+/* ===================================================== */
+/* 📲 TABLET — 1023px і менше */
+/* ===================================================== */
+@media (max-width: 1023px) {
+  .section {
+    padding: 40px 80px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .imageWrapper {
+    width: 50%;
+  }
+
+  .imageWrapper::after {
+    top: 8px;
+    left: 8px;
+  }
+
+  .list {
+    font-size: 18px;
+    line-height: 170%;
+  }
+}
+
+/* ===================================================== */
+/* 📱 MOBILE — 480px і менше */
+/* ===================================================== */
+@media (max-width: 480px) {
+  .section {
+    padding: 32px 20px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  .content {
+    gap: 24px;
+  }
+
+  .imageWrapper {
+    width: 85%;
+  }
+
+  .imageWrapper::after {
+    top: 6px;
+    left: 6px;
+  }
+
+  .list {
+    font-size: 16px;
+    line-height: 160%;
+    padding-left: 20px;
+  }
 }

@@ -7,6 +7,7 @@ const BenefitsService = () => {
     <section className={css.section}>
       <div className={css.header}>
         <h3 className={css.title}>Чому такий варіант підійде:</h3>
+        <div className={css.line}></div>
       </div>
       <div className={css.content}>
         <ol className={css.list}>
@@ -19,13 +20,15 @@ const BenefitsService = () => {
           <li>Підписуємо договір;</li>
           <li>Результат гарантуємо на 100%!</li>
         </ol>
-        <Image
-          src={benefitsServiceImg}
-          alt="Benefits service image"
-          width={489}
-          height={293}
-          className={css.image}
-        />
+        <div className={css.imageWrapper}>
+          <Image
+            src={benefitsServiceImg}
+            alt="Benefits service image"
+            width={489}
+            height={293}
+            className={css.image}
+          />
+        </div>
       </div>
     </section>
   );

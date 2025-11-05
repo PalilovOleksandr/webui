@@ -1,7 +1,21 @@
+'use client';
+
 import css from './Review.module.css';
 import { BiSolidQuoteLeft } from 'react-icons/bi';
+import { useState } from 'react';
+import Modal from '../Modal/Modal';
+import ModalForm from '../ModalForm/ModalForm';
 
 const Review = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  function openModal() {
+    setIsModalOpen(true);
+  }
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
   return (
     <section className={css.section}>
       <div className={css.quoteSection}>
@@ -19,8 +33,15 @@ const Review = () => {
         </div>
       </div>
       <div className={css.imageSection}>
-        <button className={css.contactButton}>ЗВ`ЯЗАТИСЬ</button>
+        <button className={css.contactButton} onClick={openModal}>
+          ЗВ`ЯЗАТИСЬ
+        </button>
       </div>
+      {isModalOpen && (
+        <Modal onClose={closeModal}>
+          <ModalForm onClose={closeModal} />
+        </Modal>
+      )}
     </section>
   );
 };

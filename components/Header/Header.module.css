@@ -3,17 +3,30 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 16px 105px 16px 105px;
+  justify-content: space-between;
+  padding: 16px 105px;
   gap: 33px;
   color: var(--color-primary);
   background: linear-gradient(175deg, #0e1927 11.54%, #5a707f 100%);
+  position: relative;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.svg {
+  width: 215px;
+  height: 84px;
 }
 
 .address {
   display: flex;
+  align-items: center;
   font-style: normal;
-  gap: 18px;
-  margin-right: 105px;
+  gap: 12px;
+  margin-right: 60px;
 }
 
 .phone {
@@ -27,13 +40,7 @@
   font-size: 18px;
 }
 
-.svg {
-  width: 215px;
-  height: 84px;
-}
-
 .navigation {
-  display: block;
   flex: 1;
   margin-right: 45px;
 }
@@ -42,10 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.navigationList li {
-  display: flex;
+  gap: 25px;
 }
 
 .navigationList li a {
@@ -57,4 +61,122 @@
 .lang {
   font-weight: 700;
   font-size: 33px;
+}
+
+.burger {
+  display: none;
+}
+
+.mobileExtras {
+  display: none;
+}
+
+/* ----------------------------- */
+/* 💻 Tablet і менше */
+/* ----------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 16px 40px;
+  }
+
+  .burger {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(14, 25, 39, 0.98);
+    backdrop-filter: blur(8px);
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 20px 0;
+  }
+
+  .open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navigationList {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .address,
+  .lang {
+    display: none;
+  }
+
+  .mobileExtras {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .addressMobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-style: normal;
+  }
+
+  .langMobile {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+/* ----------------------------- */
+/* 📱 Mobile: до 768px */
+/* ----------------------------- */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 24px;
+  }
+
+  .svg {
+    width: 150px;
+    height: 60px;
+  }
+
+  .number {
+    font-size: 16px;
+  }
+
+  .langMobile {
+    font-size: 20px;
+  }
+}
+
+/* ----------------------------- */
+/* 📲 Small mobile: до 480px */
+/* ----------------------------- */
+@media (max-width: 480px) {
+  .svg {
+    width: 120px;
+    height: 42px;
+  }
+
+  .navigationList {
+    gap: 18px;
+  }
+
+  .addressMobile .number {
+    font-size: 15px;
+  }
 }

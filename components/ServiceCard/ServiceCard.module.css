@@ -1,6 +1,8 @@
 .section {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 97px 158px;
   gap: 133px;
   color: #293241;
@@ -16,8 +18,10 @@
   line-height: 19%;
   text-transform: uppercase;
   color: #f5f5f5;
-  right: -17px;
+  right: 0;
   bottom: 91px;
+  z-index: -1;
+  white-space: nowrap;
 }
 
 .content {
@@ -25,6 +29,7 @@
   display: flex;
   flex-direction: column;
   max-width: 464px;
+  z-index: 1;
 }
 
 .content::after {
@@ -33,7 +38,7 @@
   right: -50%;
   border: 1px solid #293241;
   width: 301px;
-  height: 0px;
+  height: 0;
   transform: rotate(90deg) translateX(75%);
 }
 
@@ -60,4 +65,93 @@
   font-size: 24px;
   line-height: 142%;
   color: #293241;
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 16px;
+  max-width: 390px;
+}
+
+/* ===================================================== */
+/* 📉 TABLET (≤1024px) */
+/* ===================================================== */
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    padding: 80px 80px;
+  }
+
+  .section::after {
+    font-size: 100px;
+    bottom: 20px;
+    opacity: 0.3;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .content {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .content::after {
+    display: none;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .price {
+    font-size: 42px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .imageWrapper {
+    justify-content: center;
+    max-width: 50%;
+  }
+}
+
+/* ===================================================== */
+/* 📱 MOBILE (≤480px) */
+/* ===================================================== */
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 20px;
+    gap: 32px;
+  }
+
+  .section::after {
+    display: none;
+  }
+
+  .title {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+
+  .price {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 145%;
+  }
+
+  .imageWrapper {
+    display: none;
+  }
 }
