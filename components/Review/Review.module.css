@@ -4,7 +4,6 @@
   color: #ffffff;
 }
 
-/* ===== LEFT BLOCK ===== */
 .quoteSection {
   flex: 1;
   background-color: #273347;
@@ -74,7 +73,6 @@
   background-color: #f0f0f0;
 }
 
-/* ===== RIGHT BLOCK ===== */
 .imageSection {
   flex: 1;
   background-image: url('/images/Review.jpg');
@@ -95,9 +93,6 @@
   z-index: 2;
 }
 
-/* ===================================================== */
-/* 📲 TABLET — 1023px і менше */
-/* ===================================================== */
 @media (max-width: 1023px) {
   .section {
     position: relative;
@@ -125,9 +120,6 @@
   }
 }
 
-/* ===================================================== */
-/* 📱 MOBILE — 480px і менше */
-/* ===================================================== */
 @media (max-width: 480px) {
   .quoteSection {
     padding: 40px 24px;

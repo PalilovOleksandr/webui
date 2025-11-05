@@ -104,8 +104,7 @@
   height: auto;
 }
 
-/* ---------- Tablet (до 1199px) ---------- */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .advantages::before {
     left: 0;
   }
@@ -139,8 +138,7 @@
   }
 }
 
-/* ---------- Mobile (до 767px) ---------- */
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .title {
     font-size: 36px;
     line-height: 100%;

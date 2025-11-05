@@ -121,8 +121,7 @@
   background: #1e2c3a;
 }
 
-/* ===== 🖥️ 1024px і менше (tablet) ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .hero {
     padding: 200px 100px 0;
   }
@@ -160,8 +159,7 @@
   }
 }
 
-/* ===== 📱 768px і менше (mobile landscape) ===== */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .hero {
     padding: 160px 60px 0;
     justify-content: center;
@@ -185,28 +183,5 @@
     font-size: 20px;
     padding: 8px 28px;
     align-self: center;
-  }
-}
-
-/* ===== 📞 480px і менше (mobile portrait) ===== */
-@media (max-width: 480px) {
-  .hero {
-    padding: 120px 30px 0;
-  }
-
-  .title,
-  .span {
-    font-size: 34px;
-    line-height: 1.2;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-
-  .button {
-    font-size: 18px;
-    padding: 8px 24px;
   }
 }

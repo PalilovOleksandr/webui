@@ -71,10 +71,7 @@
   display: none;
 }
 
-/* ----------------------------- */
-/* 💻 Tablet і менше */
-/* ----------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .header {
     padding: 16px 40px;
   }
@@ -141,31 +138,6 @@
   }
 }
 
-/* ----------------------------- */
-/* 📱 Mobile: до 768px */
-/* ----------------------------- */
-@media (max-width: 768px) {
-  .header {
-    padding: 12px 24px;
-  }
-
-  .svg {
-    width: 150px;
-    height: 60px;
-  }
-
-  .number {
-    font-size: 16px;
-  }
-
-  .langMobile {
-    font-size: 20px;
-  }
-}
-
-/* ----------------------------- */
-/* 📲 Small mobile: до 480px */
-/* ----------------------------- */
 @media (max-width: 480px) {
   .svg {
     width: 120px;
