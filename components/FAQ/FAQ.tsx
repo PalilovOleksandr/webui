@@ -3,8 +3,9 @@
 import { useState } from 'react';
 import css from './FAQ.module.css';
 import { AiOutlineDown } from 'react-icons/ai';
+import { BsChevronDoubleDown } from 'react-icons/bs';
 import Image from 'next/image';
-import FaqImg from '@/public/images/AlimonyService.jpg';
+import FaqImg from '@/public/images/FAQ.jpg';
 
 const faqs = [
   {
@@ -49,16 +50,16 @@ const FAQSection = () => {
   return (
     <section className={css.section}>
       <div className={css.container}>
-        <h2 className={css.title}>
+        <h3 className={css.title}>
           ПОШИРЕНІ
           <span className={css.bottomWord}>ЗАПИТАННЯ</span>
-        </h2>
+        </h3>
         <div className={css.content}>
           <div className={css.imageWrapper}>
             <Image
               src={FaqImg}
-              alt="Alimony service photo"
-              width={244}
+              alt="FAQ service photo"
+              width={243}
               height={310}
               className={css.image}
             />
@@ -91,7 +92,7 @@ const FAQSection = () => {
             </ul>
 
             <button className={css.moreBtn}>
-              БІЛЬШЕ <AiOutlineDown className={css.moreIcon} size={20} />
+              БІЛЬШЕ <BsChevronDoubleDown className={css.moreIcon} size={55} />
             </button>
           </div>
         </div>

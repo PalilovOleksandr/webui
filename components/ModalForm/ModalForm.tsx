@@ -67,7 +67,7 @@ const ModalForm = ({ onClose }: ModalFormProps) => {
 
   return (
     <div className={css.formWrapper}>
-      <h2 className={css.title}>Зв`язатись з нами</h2>
+      <h3 className={css.title}>Зв`язатись з нами</h3>
 
       <Formik
         initialValues={initialValues}

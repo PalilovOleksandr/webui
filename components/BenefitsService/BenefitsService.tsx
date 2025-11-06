@@ -6,7 +6,7 @@ const BenefitsService = () => {
   return (
     <section className={css.section}>
       <div className={css.header}>
-        <h3 className={css.title}>Чому такий варіант підійде:</h3>
+        <h4 className={css.title}>Чому такий варіант підійде:</h4>
         <div className={css.line}></div>
       </div>
       <div className={css.content}>

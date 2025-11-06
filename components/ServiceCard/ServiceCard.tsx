@@ -14,9 +14,9 @@ const ServiceCard = () => {
         />
       </div>
       <div className={css.content}>
-        <h2 className={css.title}>
+        <h3 className={css.title}>
           Розірвання <br /> шлюбу під ключ
-        </h2>
+        </h3>
         <span className={css.price}>лише 9000 грн</span>
         <p className={css.text}>
           Жодних прихованих <br /> платежів — лише прозора вартість

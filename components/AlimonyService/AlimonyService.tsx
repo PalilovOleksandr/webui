@@ -5,9 +5,9 @@ import alimonyServiceImg from '@/public/images/AlimonyService.jpg';
 const AlimonyService = () => {
   return (
     <section className={css.section}>
-      <h3 className={css.title}>
+      <h5 className={css.title}>
         Послуга аліменти під ключ розрахована для тих, хто:
-      </h3>
+      </h5>
       <div className={css.content}>
         <div className={css.imageWrapper}>
           <Image

@@ -3,6 +3,7 @@ import { Inter, Instrument_Sans, Tinos } from 'next/font/google';
 import 'modern-normalize';
 import './globals.css';
 import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 const interSans = Inter({
   variable: '--font-inter-sans',
@@ -43,6 +44,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="container">{children}</main>
+        <Footer />
       </body>
     </html>
   );

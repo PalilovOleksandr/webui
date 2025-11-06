@@ -7,7 +7,7 @@ const PriceDetails = () => {
     <section className={css.section}>
       <div className={css.container}>
         <div className={css.header}>
-          <h3 className={css.title}>ЩО ВКЛЮЧЕНО У ВАРТІСТЬ 9000 ГРН?</h3>
+          <h4 className={css.title}>ЩО ВКЛЮЧЕНО У ВАРТІСТЬ 9000 ГРН?</h4>
           <div className={css.line}></div>
         </div>
         <div className={css.mainContent}>

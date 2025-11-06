@@ -1,0 +1,50 @@
+.footer {
+  background-color: #293241;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+  gap: 30px;
+}
+
+.textLogo {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.serviceList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconList {
+  display: flex;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.iconWrapper svg {
+  fill: #293241;
+  font-size: 1.5em;
+}
