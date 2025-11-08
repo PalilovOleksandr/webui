@@ -1,0 +1,27 @@
+.langList {
+  font-family: var(--font-inter-sans);
+  font-weight: 700;
+  font-size: 33px;
+  color: var(--color-primary);
+  appearance: none;
+  cursor: pointer;
+}
+
+.langList option {
+  background-color: #5a707f;
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .langList {
+    font-size: 28px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .langList {
+    font-size: 22px;
+    padding: 4px 8px;
+  }
+}

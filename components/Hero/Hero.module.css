@@ -1,19 +1,15 @@
 .hero {
   position: relative;
-  background: url('/images/hero.jpg') center/cover no-repeat;
+  background-image:
+    linear-gradient(rgba(30, 44, 58, 0.64)), url('/images/hero.jpg');
+  background-position: center -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 300px 200px 0;
   overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(30, 44, 58, 0.64);
-  z-index: 1;
 }
 
 .hero::after {

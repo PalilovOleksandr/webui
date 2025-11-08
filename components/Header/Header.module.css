@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding: 16px 105px;
   gap: 33px;
-  color: var(--color-primary);
+  color: #ffffff;
   background: linear-gradient(175deg, #0e1927 11.54%, #5a707f 100%);
   position: relative;
 }
@@ -41,6 +41,8 @@
 }
 
 .navigation {
+  display: flex;
+  justify-content: space-between;
   flex: 1;
   margin-right: 45px;
 }
