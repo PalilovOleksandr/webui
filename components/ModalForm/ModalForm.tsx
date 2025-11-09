@@ -4,6 +4,8 @@ import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import css from './ModalForm.module.css';
 import emailjs from '@emailjs/browser';
+import { useMessages, useTranslations } from 'next-intl';
+import { IoMdClose } from 'react-icons/io';
 
 interface FormValues {
   name: string;
@@ -29,16 +31,20 @@ const ModalForm = ({ onClose }: ModalFormProps) => {
     subject: '',
   };
 
+  const t = useTranslations('modalForm');
+  const messages = useMessages();
+  const validation = messages.modalForm.validation;
+
   const validationSchema = Yup.object({
     name: Yup.string()
-      .min(2, 'Мінімум 2 символи')
-      .required("Ім'я є обов'язковим"),
+      .min(2, `${validation.name.min}`)
+      .required(`${validation.name.required}`),
     email: Yup.string()
-      .email('Некоректний email')
-      .required('Email є обовʼязковим'),
+      .email(`${validation.email.email}`)
+      .required(`${validation.email.required}`),
     message: Yup.string()
-      .min(10, 'Мінімум 10 символів')
-      .required('Введіть повідомлення'),
+      .min(10, `${validation.message.min}`)
+      .required(`${validation.message.required}`),
   });
 
   const handleSubmit = async (
@@ -56,18 +62,21 @@ const ModalForm = ({ onClose }: ModalFormProps) => {
         },
         'To8pW1ZPlb5TJqseo'
       );
-      alert('✅ Повідомлення успішно відправлено!');
+      alert(`✅ ${t('success')}`);
       resetForm();
       setTimeout(() => onClose(), 100);
     } catch (error) {
       console.error('❌ Помилка при відправці:', error);
-      alert('Сталася помилка. Спробуйте пізніше.');
+      alert(`${t('error')}`);
     }
   };
 
   return (
     <div className={css.formWrapper}>
-      <h3 className={css.title}>Зв`язатись з нами</h3>
+      <h3 className={css.title}>{t('title')}</h3>
+      <button type="button" onClick={onClose} className={css.close}>
+        <IoMdClose size={25} />
+      </button>
 
       <Formik
         initialValues={initialValues}
@@ -76,19 +85,19 @@ const ModalForm = ({ onClose }: ModalFormProps) => {
       >
         <Form className={css.form}>
           <label className={css.label}>
-            Ім`я
+            {t('name')}
             <Field name="name" type="text" className={css.input} />
             <ErrorMessage name="name" component="span" className={css.error} />
           </label>
 
           <label className={css.label}>
-            Email
+            {t('email')}
             <Field name="email" type="email" className={css.input} />
             <ErrorMessage name="email" component="span" className={css.error} />
           </label>
 
           <label className={css.label}>
-            Повідомлення
+            {t('message')}
             <Field
               as="textarea"
               name="message"
@@ -102,7 +111,7 @@ const ModalForm = ({ onClose }: ModalFormProps) => {
           </label>
 
           <button type="submit" className={css.submitBtn}>
-            Відправити
+            {t('button')}
           </button>
         </Form>
       </Formik>

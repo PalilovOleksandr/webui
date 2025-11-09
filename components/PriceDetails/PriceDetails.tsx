@@ -1,13 +1,16 @@
 import Image from 'next/image';
 import css from './PriceDetails.module.css';
 import priceDetailsImg from '@/public/images/PriceDetails.jpg';
+import { useTranslations } from 'next-intl';
 
 const PriceDetails = () => {
+  const t = useTranslations('priceDetails');
+
   return (
     <section className={css.section}>
       <div className={css.container}>
         <div className={css.header}>
-          <h4 className={css.title}>ЩО ВКЛЮЧЕНО У ВАРТІСТЬ 9000 ГРН?</h4>
+          <h4 className={css.title}>{t('title')}</h4>
           <div className={css.line}></div>
         </div>
         <div className={css.mainContent}>
@@ -22,21 +25,16 @@ const PriceDetails = () => {
           </div>
           <div className={css.textBlock}>
             <ol className={css.list}>
-              <li>Підготовка документів до суду</li>
-              <li>Подача документів до суду</li>
-              <li>Судовий збір 1211,20 грн</li>
-              <li>Контроль справи</li>
-              <li>
-                Інформування клієнта про рух справи у суді на кожному етапі
-              </li>
-              <li>Представництво у суді</li>
-              <li>Отримання рішення</li>
-              <li>Відправлення клієнту рішення суду.</li>
+              <li>{t('li1')}</li>
+              <li>{t('li2')}</li>
+              <li>{t('li3')}</li>
+              <li>{t('li4')}</li>
+              <li>{t('li5')}</li>
+              <li>{t('li6')}</li>
+              <li>{t('li7')}</li>
+              <li>{t('li8')}</li>
             </ol>
-            <p className={css.comment}>
-              Процес розлучення завершено після того, як клієнт отримав рішення
-              суду.
-            </p>
+            <p className={css.comment}>{t('text')}</p>
           </div>
         </div>
       </div>

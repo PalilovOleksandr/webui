@@ -169,14 +169,6 @@
   color: #2f57ef;
 }
 
-.moreIcon {
-  margin-left: 8px;
-}
-
-.moreBtn:hover .moreIcon {
-  transform: translateY(3px);
-}
-
 @media (max-width: 1023px) {
   .section {
     padding: 60px 80px;
@@ -227,6 +219,7 @@
 
   .title {
     font-size: 28px;
+    flex-direction: column;
     text-align: center;
     align-items: center;
   }
@@ -236,11 +229,6 @@
     align-items: center;
     text-align: center;
     gap: 30px;
-  }
-
-  .imageWrapper {
-    margin-left: 0;
-    max-width: 220px;
   }
 
   .faqList {

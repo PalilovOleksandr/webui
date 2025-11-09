@@ -1,30 +1,24 @@
 import styles from './Advantages.module.css';
 import Image from 'next/image';
 import advantageImg from '@/public/images/advantages.jpg';
+import { useTranslations } from 'next-intl';
 
 export default function Advantages() {
+  const t = useTranslations('advantages');
+
   return (
     <section className={styles.advantages}>
       <div className={styles.darkBlock}>
         <div className={styles.container}>
-          <h2 className={styles.title}>Наші переваги</h2>
+          <h2 className={styles.title}>{t('title')}</h2>
           <div className={styles.content}>
             <ul className={styles.list}>
-              <li>
-                консультація безкоштовна телефон, вайбер, телеграм, вотсап.
-              </li>
-              <li>
-                справу супруводжує адвокат з 20-річним досвідом у юридичній
-                сфері, з яких 10 років - на посадді помічника судді. Це означає
-                глибоке розуміння судової практики та процесів з середини.
-              </li>
-              <li>
-                100 % виграних справ. Результат гарантуємо, в іншому випадку
-                кошти будуть повернуто
-              </li>
-              <li>усе роблимо без вашої участі.</li>
-              <li>Ідеальне рішення для тих, хто цінує свій час та спокій.</li>
-              <li>5689 виграних справ</li>
+              <li>{t('li1')}</li>
+              <li>{t('li2')}</li>
+              <li>{t('li3')}</li>
+              <li>{t('li4')}</li>
+              <li>{t('li5')}</li>
+              <li>{t('li6')}</li>
             </ul>
             <div className={styles.imageWrapper}>
               <Image

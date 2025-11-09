@@ -5,9 +5,12 @@ import { BiSolidQuoteLeft } from 'react-icons/bi';
 import { useState } from 'react';
 import Modal from '../Modal/Modal';
 import ModalForm from '../ModalForm/ModalForm';
+import { useTranslations } from 'next-intl';
 
 const Review = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  const t = useTranslations('review');
 
   function openModal() {
     setIsModalOpen(true);
@@ -17,24 +20,19 @@ const Review = () => {
   }
 
   return (
-    <section className={css.section}>
+    <section id="review" className={css.section}>
       <div className={css.quoteSection}>
         <div className={css.quoteIcon}>
           <BiSolidQuoteLeft className={css.icon} />
         </div>
-        <p className={css.quoteText}>
-          {`          "Думала, що розлучення — це складно, але все виявилось набагато
-          простіше. Заповнила анкету, отримала документи на пошту й навіть не
-          ходила до суду. Аліменти теж оформили під ключ. Все швидко, ввічливо і
-          без зайвого стресу. Дякую!"`}
-        </p>
+        <p className={css.quoteText}>{`"${t('text')}"`}</p>
         <div className={css.clientInfo}>
-          <p>Анна, 34 роки, Київ</p>
+          <p>{t('info')}</p>
         </div>
       </div>
       <div className={css.imageSection}>
         <button className={css.contactButton} onClick={openModal}>
-          ЗВ`ЯЗАТИСЬ
+          {t('button')}
         </button>
       </div>
       {isModalOpen && (

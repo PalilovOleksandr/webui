@@ -1,24 +1,24 @@
 import Image from 'next/image';
 import css from './BenefitsService.module.css';
 import benefitsServiceImg from '@/public/images/benefitsService.jpg';
+import { useTranslations } from 'next-intl';
 
 const BenefitsService = () => {
+  const t = useTranslations('benefits');
+
   return (
     <section className={css.section}>
       <div className={css.header}>
-        <h4 className={css.title}>Чому такий варіант підійде:</h4>
+        <h4 className={css.title}>{t('title')}</h4>
         <div className={css.line}></div>
       </div>
       <div className={css.content}>
         <ol className={css.list}>
-          <li>
-            Адвокат, веде справу до результату, а саме до позитивного рішення
-            суду;
-          </li>
-          <li>Вартість фіксована 9000 грн;</li>
-          <li>Усе робимо без Вашої участі;</li>
-          <li>Підписуємо договір;</li>
-          <li>Результат гарантуємо на 100%!</li>
+          <li>{t('li1')}</li>
+          <li>{t('li2')}</li>
+          <li>{t('li3')}</li>
+          <li>{t('li4')}</li>
+          <li>{t('li5')}</li>
         </ol>
         <div className={css.imageWrapper}>
           <Image

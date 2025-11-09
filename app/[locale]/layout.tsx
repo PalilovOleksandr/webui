@@ -8,6 +8,7 @@ import { routing } from '@/i18n/routing';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
+import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
 
 const interSans = Inter({
   variable: '--font-inter-sans',
@@ -63,6 +64,7 @@ export default async function RootLayout({
           <Header />
           <main className="container">{children}</main>
           <Footer />
+          <ScrollToTopButton />
         </NextIntlClientProvider>
       </body>
     </html>

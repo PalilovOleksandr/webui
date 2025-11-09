@@ -1,10 +1,124 @@
 {
+  "advantages": {
+    "li1": "free consultation by phone, Viber, Telegram, WhatsApp.",
+    "li2": "the case is handled by a lawyer with 20 years of experience in the legal field, 10 of which were as an assistant judge. This means a deep understanding of judicial practice and processes from the inside.",
+    "li3": "100% of cases won. we guarantee the result, otherwise the funds will be returned",
+    "li4": "we do everything without your participation.",
+    "li5": "the ideal solution for those who value their time and peace of mind.",
+    "li6": "5689 cases won",
+    "title": "Our Advantages"
+  },
+  "alimony": {
+    "li1": "Is abroad",
+    "li2": "Lost documents (marriage certificate, children's birth certificate)",
+    "li3": "Does not know the place of residence of the other spouse",
+    "li4": "Is married to a foreigner",
+    "li5": "Does not want or is unable to personally handle the case",
+    "li6": "One of the spouses lives in the occupied territory",
+    "title": "The turnkey alimony service is designed for those who:"
+  },
+  "benefits": {
+    "li1": "a lawyer manages the case until the result, namely until a positive court decision;",
+    "li2": "the cost is fixed at 9000 UAH;",
+    "li3": "we do everything without your participation;",
+    "li4": "we sign a contract;",
+    "li5": "we guarantee the result 100%!",
+    "title": "Why this option is suitable:"
+  },
   "header": {
-    "logo": "Divorce online",
     "nav1": "Services",
     "nav2": "FAQ",
     "nav3": "Blog",
-    "nav4": "About us",
+    "nav4": "About Us",
     "nav5": "Contacts"
+  },
+  "hero": {
+    "button": "Submit",
+    "subtitle": "turnkey divorce",
+    "title": "Divorce",
+    "titleText": "start a new life - we'll take care of the rest."
+  },
+  "serviceCard": {
+    "price": "only 9000 UAH",
+    "subtext": "payments — only a transparent cost",
+    "subtitle": "turnkey divorce",
+    "text": "no hidden",
+    "title": "Divorce"
+  },
+  "result": {
+    "title": "You will receive:",
+    "li1": "Preparation of all documents",
+    "li2": "Free consultation",
+    "li3": "Online format — no court or office visits",
+    "li4": "Representation in court",
+    "li5": "100% result"
+  },
+  "priceDetails": {
+    "title": "WHAT IS INCLUDED IN THE 9000 UAH COST?",
+    "li1": "Preparation of documents for court",
+    "li2": "Submission of documents to court",
+    "li3": "Court fee 1211.20 UAH",
+    "li4": "Case monitoring",
+    "li5": "Informing the client about the movement of the case in court at every stage",
+    "li6": "Representation in court",
+    "li7": "Obtaining the decision",
+    "li8": "Sending the court decision to the client.",
+    "text": "The divorce process is complete after the client receives the court decision."
+  },
+  "review": {
+    "text": "i thought divorce was complicated, but it turned out to be much simpler. i filled out the form, received the documents by mail, and didn't even have to go to court. alimony was also arranged turnkey. everything was fast, polite, and without unnecessary stress. thank you!",
+    "info": "Anna, 34 years old, Kyiv",
+    "button": "CONTACT US"
+  },
+  "faq": {
+    "title": "FREQUENT",
+    "subtitle": "QUESTIONS",
+    "faqs": [
+      {
+        "question": "What documents are needed for divorce through court?",
+        "answer": "For divorce through court, you need: an application, a marriage certificate, copies of passports, and identification codes of the spouses."
+      },
+      {
+        "question": "What is the cost of the court fee?",
+        "answer": "As of 2025, the court fee is approximately 0.4 times the subsistence minimum for able-bodied persons."
+      },
+      {
+        "question": "How long does the divorce process through court last?",
+        "answer": "On average, the process lasts from 1 to 3 months, depending on the court's workload and the circumstances of the case."
+      },
+      {
+        "question": "What are the options for divorce in Ukraine?",
+        "answer": "There are two options: through the Civil Registry Office (by mutual consent without children) or through court (in the presence of children or lack of consent)."
+      },
+      {
+        "question": "Is it necessary to attend court?",
+        "answer": "In most cases, yes, but it is possible to submit a request to consider the case without your participation."
+      },
+      {
+        "question": "Is the consent of the other spouse required?",
+        "answer": "No, a marriage can be dissolved even without the consent of the other party through court."
+      }
+    ],
+    "text": "MORE"
+  },
+  "modalForm": {
+    "title": "Contact us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "button": "Send",
+    "success": "Message successfully sent!",
+    "error": "An error occurred. Please try again later.",
+    "validation": {
+      "name": { "min": "Minimum 2 characters", "required": "Name is required" },
+      "email": {
+        "email": "Invalid email",
+        "required": "Email is required"
+      },
+      "message": {
+        "min": "Minimum 10 characters",
+        "required": "Enter a message"
+      }
+    }
   }
 }

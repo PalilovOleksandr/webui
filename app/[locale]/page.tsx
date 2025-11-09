@@ -1,4 +1,3 @@
-import Hero from '@/components/Hero/Hero';
 // import css from './page.module.css';
 import Advantages from '@/components/Advantages/Advantages';
 import ServiceCard from '@/components/ServiceCard/ServiceCard';
@@ -10,6 +9,7 @@ import Review from '@/components/Review/Review';
 import FAQ from '@/components/FAQ/FAQ';
 import { use } from 'react';
 import { setRequestLocale } from 'next-intl/server';
+import HeroSection from '@/components/Hero/Hero';
 
 export default function Home({
   params,
@@ -22,7 +22,7 @@ export default function Home({
 
   return (
     <>
-      <Hero />
+      <HeroSection />
       <Advantages />
       <ServiceCard />
       <BenefitsService />

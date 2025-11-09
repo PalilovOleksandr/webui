@@ -1,8 +1,11 @@
 import Image from 'next/image';
 import serviceCardImg from '@/public/images/serviceCard.jpg';
 import css from './ServiceCard.module.css';
+import { useTranslations } from 'next-intl';
 
 const ServiceCard = () => {
+  const t = useTranslations('serviceCard');
+
   return (
     <section className={css.section}>
       <div className={css.imageWrapper}>
@@ -15,11 +18,11 @@ const ServiceCard = () => {
       </div>
       <div className={css.content}>
         <h3 className={css.title}>
-          Розірвання <br /> шлюбу під ключ
+          {t('title')} <br /> {t('subtitle')}
         </h3>
-        <span className={css.price}>лише 9000 грн</span>
+        <span className={css.price}>{t('price')}</span>
         <p className={css.text}>
-          Жодних прихованих <br /> платежів — лише прозора вартість
+          {t('text')} <br /> {t('subtext')}
         </p>
       </div>
     </section>

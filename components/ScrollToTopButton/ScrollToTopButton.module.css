@@ -1,0 +1,52 @@
+.button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: #5a707f;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.button:hover {
+  background-color: #0e1927;
+  transform: translateY(-4px);
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .button {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    bottom: 12px;
+    right: 12px;
+    padding: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .button svg {
+    width: 16px;
+    height: 16px;
+  }
+}

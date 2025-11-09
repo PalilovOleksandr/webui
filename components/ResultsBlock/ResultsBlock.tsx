@@ -1,41 +1,44 @@
+import { useTranslations } from 'next-intl';
 import css from './ResultsBlock.module.css';
 import { GoArrowUpRight } from 'react-icons/go';
 
 const ResultsBlock = () => {
+  const t = useTranslations('result');
+
   return (
     <section className={css.section}>
       <div className={css.container}>
-        <h3 className={css.title}>Ви отримаєте:</h3>
+        <h3 className={css.title}>{t('title')}</h3>
         <ul className={css.list}>
           <li>
             <span className={css.iconWrapper}>
               <GoArrowUpRight />
             </span>
-            Підготовку всіх документів
+            {t('li1')}
           </li>
           <li>
             <span className={css.iconWrapper}>
               <GoArrowUpRight />
             </span>
-            ⁠Безкоштовну консультацію
+            {t('li2')}
           </li>
           <li>
             <span className={css.iconWrapper}>
               <GoArrowUpRight />
             </span>
-            Онлайн-формат — без <br /> відвідувань суду чи офісу
+            {t('li3')}
           </li>
           <li>
             <span className={css.iconWrapper}>
               <GoArrowUpRight />
             </span>
-            ⁠Представництво у суді
+            {t('li4')}
           </li>
           <li>
             <span className={css.iconWrapper}>
               <GoArrowUpRight />
             </span>
-            100% результат
+            {t('li5')}
           </li>
         </ul>
       </div>

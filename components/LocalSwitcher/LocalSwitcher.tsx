@@ -10,6 +10,7 @@ export const LocaleSwitcher = () => {
   const pathname = usePathname();
 
   const switchLocale = (newLocale: string) => {
+    console.log(pathname);
     if (newLocale !== locale) {
       router.replace(pathname, { locale: newLocale });
       router.refresh();

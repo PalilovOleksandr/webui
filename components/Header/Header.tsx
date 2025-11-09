@@ -53,13 +53,15 @@ const Header = () => {
             <Link href="/">{t('nav3')}</Link>
           </li>
           <li>
-            <Link href="/">{t('nav4')}</Link>
+            <Link href="/about">{t('nav4')}</Link>
           </li>
           <li>
             <Link href="/">{t('nav5')}</Link>
           </li>
         </ul>
-        <LocaleSwitcher />
+        <div className={css.localeWrapper}>
+          <LocaleSwitcher />
+        </div>
         <div className={css.mobileExtras}>
           <address className={css.addressMobile}>
             <FaPhone className={css.phone} />

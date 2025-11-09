@@ -57,7 +57,7 @@
   padding: 6px 40px;
   background-color: white;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 24px;
   z-index: 3;
   line-height: 197%;
   text-transform: uppercase;
@@ -65,7 +65,7 @@
   border: none;
   border-radius: 3px;
   width: 240px;
-  height: 60px;
+  height: auto;
   transition: background-color 0.3s;
 }
 

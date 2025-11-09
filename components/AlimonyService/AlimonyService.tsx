@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import css from './AlimonyService.module.css';
 import alimonyServiceImg from '@/public/images/AlimonyService.jpg';
+import { useTranslations } from 'next-intl';
 
 const AlimonyService = () => {
+  const t = useTranslations('alimony');
+
   return (
     <section className={css.section}>
-      <h5 className={css.title}>
-        Послуга аліменти під ключ розрахована для тих, хто:
-      </h5>
+      <h5 className={css.title}>{t('title')}</h5>
       <div className={css.content}>
         <div className={css.imageWrapper}>
           <Image
@@ -19,15 +20,12 @@ const AlimonyService = () => {
           />
         </div>
         <ul className={css.list}>
-          <li>Перебуває за кордоном</li>
-          <li>
-            Втратив документи (свідоцтво про шлюб, свідоцтво про народження
-            дітей)
-          </li>
-          <li>Не знає місце проживання іншого з подружжя</li>
-          <li>⁠Одружений з іноземцем</li>
-          <li>Не хоче або не має змоги особисто займатись справою</li>
-          <li>Один з подружжя мешкає на окупованій території</li>
+          <li>{t('li1')}</li>
+          <li>{t('li2')}</li>
+          <li>{t('li3')}</li>
+          <li>{t('li4')}</li>
+          <li>{t('li5')}</li>
+          <li>{t('li6')}</li>
         </ul>
       </div>
     </section>

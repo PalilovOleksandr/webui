@@ -1,10 +1,127 @@
 {
+  "advantages": {
+    "li1": "kostenlose Beratung per Telefon, Viber, Telegram, WhatsApp.",
+    "li2": "der Fall wird von einem Anwalt mit 20 Jahren Erfahrung im Rechtsbereich betreut, davon 10 Jahre als Richterassistent. Dies bedeutet ein tiefes Verständnis der Gerichtspraxis und der Prozesse von innen heraus.",
+    "li3": "100 % gewonnene Fälle. wir garantieren das Ergebnis, andernfalls werden die Kosten zurückerstattet",
+    "li4": "wir erledigen alles ohne Ihre Beteiligung.",
+    "li5": "die ideale Lösung für diejenigen, die ihre Zeit und ihren Seelenfrieden schätzen.",
+    "li6": "5689 gewonnene Fälle",
+    "title": "Unsere Vorteile"
+  },
+  "alimony": {
+    "li1": "Befindet sich im Ausland",
+    "li2": "Hat Dokumente verloren (Heiratsurkunde, Geburtsurkunde der Kinder)",
+    "li3": "Kennt den Wohnort des anderen Ehepartners nicht",
+    "li4": "Ist mit einem Ausländer verheiratet",
+    "li5": "Möchte sich nicht persönlich um den Fall kümmern oder ist dazu nicht in der Lage",
+    "li6": "Einer der Ehepartner lebt im besetzten Gebiet",
+    "title": "Der schlüsselfertige Unterhaltsservice ist für diejenigen gedacht, die:"
+  },
+  "benefits": {
+    "li1": "ein Anwalt führt den Fall zum Ergebnis, nämlich zu einer positiven Gerichtsentscheidung;",
+    "li2": "die Kosten sind auf 9000 UAH festgelegt;",
+    "li3": "wir erledigen alles ohne Ihre Beteiligung;",
+    "li4": "wir unterzeichnen einen Vertrag;",
+    "li5": "wir garantieren das Ergebnis zu 100%!",
+    "title": "Warum diese Option geeignet ist:"
+  },
   "header": {
-    "logo": "Online-Scheidung",
     "nav1": "Dienstleistungen",
-    "nav2": "Häufige Fragen",
+    "nav2": "Beliebte Fragen",
     "nav3": "Blog",
     "nav4": "Über uns",
-    "nav5": "Kontakte"
+    "nav5": "Kontakt"
+  },
+  "hero": {
+    "button": "Antrag stellen",
+    "subtitle": "schlüsselfertige Scheidung",
+    "title": "Scheidung",
+    "titleText": "beginnen Sie ein neues Leben – wir kümmern uns um den Rest."
+  },
+  "serviceCard": {
+    "price": "nur 9000 UAH",
+    "subtext": "Zahlungen — nur ein transparenter Preis",
+    "subtitle": "schlüsselfertige Scheidung",
+    "text": "keine versteckten",
+    "title": "Scheidung"
+  },
+  "result": {
+    "title": "Sie erhalten:",
+    "li1": "Vorbereitung aller Dokumente",
+    "li2": "Kostenlose Beratung",
+    "li3": "Online-Format — keine Gerichts- oder Bürobesuche",
+    "li4": "Vertretung vor Gericht",
+    "li5": "100%iges Ergebnis"
+  },
+  "priceDetails": {
+    "title": "WAS IST IM PREIS VON 9000 UAH ENTHALTEN?",
+    "li1": "Vorbereitung der Dokumente für das Gericht",
+    "li2": "Einreichung der Dokumente beim Gericht",
+    "li3": "Gerichtsgebühr 1211,20 UAH",
+    "li4": "Fallüberwachung",
+    "li5": "Information des Klienten über den Stand des Falles vor Gericht in jeder Phase",
+    "li6": "Vertretung vor Gericht",
+    "li7": "Erhalt des Urteils",
+    "li8": "Zusendung des Gerichtsurteils an den Klienten.",
+    "text": "Der Scheidungsprozess ist abgeschlossen, nachdem der Klient das Gerichtsurteil erhalten hat."
+  },
+  "review": {
+    "text": "ich dachte, Scheidung sei kompliziert, aber es stellte sich als viel einfacher heraus. ich füllte den Fragebogen aus, erhielt die Dokumente per Post und musste nicht einmal zum Gericht gehen. Unterhalt wurde auch schlüsselfertig geregelt. alles schnell, höflich und ohne unnötigen Stress. danke!",
+    "info": "Anna, 34 Jahre alt, Kiew",
+    "button": "KONTAKT AUFNEHMEN"
+  },
+  "faq": {
+    "title": "HÄUFIG",
+    "subtitle": "GESTELLTE FRAGEN",
+    "faqs": [
+      {
+        "question": "Welche Dokumente werden für eine Scheidung vor Gericht benötigt?",
+        "answer": "Für eine Scheidung vor Gericht sind erforderlich: ein Antrag, eine Heiratsurkunde, Kopien der Pässe und Identifikationscodes der Ehepartner."
+      },
+      {
+        "question": "Wie hoch ist die Gerichtsgebühr?",
+        "answer": "Stand 2025 beträgt die Gerichtsgebühr etwa das 0,4-fache des Existenzminimums für arbeitsfähige Personen."
+      },
+      {
+        "question": "Wie lange dauert der Scheidungsprozess vor Gericht?",
+        "answer": "Im Durchschnitt dauert der Prozess 1 bis 3 Monate, abhängig von der Auslastung des Gerichts und den Umständen des Falles."
+      },
+      {
+        "question": "Welche Optionen gibt es für eine Scheidung in der Ukraine?",
+        "answer": "Es gibt zwei Optionen: über das Standesamt (im gegenseitigen Einvernehmen ohne Kinder) oder über das Gericht (bei Vorhandensein von Kindern oder fehlendem Einverständnis)."
+      },
+      {
+        "question": "Ist die Anwesenheit vor Gericht notwendig?",
+        "answer": "In den meisten Fällen ja, aber es ist möglich, einen Antrag auf Verhandlung des Falles ohne Ihre Teilnahme einzureichen."
+      },
+      {
+        "question": "Ist die Zustimmung des anderen Ehepartners erforderlich?",
+        "answer": "Nein, eine Ehe kann auch ohne die Zustimmung der anderen Partei durch das Gericht geschieden werden."
+      }
+    ],
+    "text": "MEHR"
+  },
+  "modalForm": {
+    "title": "Kontaktieren Sie uns",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "button": "Senden",
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+    "validation": {
+      "name": {
+        "min": "Mindestens 2 Zeichen",
+        "required": "Name ist erforderlich"
+      },
+      "email": {
+        "email": "Ungültige E-Mail",
+        "required": "E-Mail ist erforderlich"
+      },
+      "message": {
+        "min": "Mindestens 10 Zeichen",
+        "required": "Geben Sie eine Nachricht ein"
+      }
+    }
   }
 }
